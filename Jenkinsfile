@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'g++ main.cpp -o pes2ug22cs119-1' // Compile the C++ file
+                    sh 'g++ mainlol.cpp -o pes2ug22cs119-1' // intentionsal error
                 }
             }
         }
