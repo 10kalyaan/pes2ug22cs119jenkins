@@ -11,13 +11,15 @@ pipeline {
             } 
         }
 
-         stage('Build') { 
-             steps { 
-                 script { 
-                     sh 'g++ -o pes2ug22cs119-1 main.cpp' 
-                 } 
-             } 
-         } 
+       stage('Build') { 
+            steps { 
+                build 'pes2ug22cs119-1'
+               
+                sh 'g++ -o  main.cpp -o output'  // Intentional mistake (should be .cpp)
+
+            } 
+        }
+ 
          stage('Test') { 
              steps { 
                  script { 
