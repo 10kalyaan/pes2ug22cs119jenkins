@@ -15,7 +15,7 @@ pipeline {
             steps { 
                 build 'pes2ug22cs119-1'
                
-                sh 'g++ -o  main.cpp -o output'  // Intentional mistake (should be .cpp)
+                sh 'g++ main.cpp -o output'
 
             } 
         }
